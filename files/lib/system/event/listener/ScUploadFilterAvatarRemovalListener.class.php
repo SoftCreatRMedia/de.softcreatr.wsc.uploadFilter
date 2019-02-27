@@ -22,11 +22,10 @@ class ScUploadFilterAvatarRemovalListener implements IParameterizedEventListener
 		$now->setTimezone($tz);
 		$then->setTimezone($tz);
 		
-		if ($now->getTimestamp() > $then->getTimestamp()) {
-			WCF::getTPL()->assign('uploadFilterRemoveAvatar', false);
-		}
-		else {
-			WCF::getTPL()->assign('uploadFilterRemoveAvatar', true);
-		}
+		WCF::getTPL()->assign('uploadFilterRemoveAvatar', false);
+		
+		if ($now->getTimestamp() > $then->getTimestamp()) return;
+		
+		WCF::getTPL()->assign('uploadFilterRemoveAvatar', true);
 	}
 }

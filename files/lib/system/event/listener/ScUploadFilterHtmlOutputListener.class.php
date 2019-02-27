@@ -29,6 +29,12 @@ class ScUploadFilterHtmlOutputListener implements IParameterizedEventListener {
 		
 		// search images
 		foreach ($eventObj->getDocument()->getElementsByTagName('img') as $image) {
+			// don't process smilies
+			if (preg_match('~\bsmiley\b~', $image->getAttribute('class'))) continue;
+			
+			// don't process images without src
+			if ($image->getAttribute('src')) continue;
+			
 			$nodeList[] = [
 				'type' => 'image',
 				'element' => $image
@@ -49,7 +55,7 @@ class ScUploadFilterHtmlOutputListener implements IParameterizedEventListener {
 			$scImage = $eventObj->renameTag($node['element'], 'p');
 			$scImage->setAttribute('class', 'error scBlockedImage');
 			
-			$fragment = $image->ownerDocument->createDocumentFragment();
+			$fragment = $node['element']->ownerDocument->createDocumentFragment();
 			$fragment->appendXML(WCF::getLanguage()->getDynamicVariable('wcf.message.error.scUploadFilter', ['type' => $node['type']]));
 			$scImage->appendChild($fragment);
 		}
