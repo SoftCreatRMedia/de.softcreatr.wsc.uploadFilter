@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language xmlns="https://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/vortex/language.xsd" languagecode="en" languagename="English" countrycode="gb">
 	<category name="wcf.message">
-		<item name="wcf.message.error.scUploadFilter"><![CDATA[This {if $type === 'image'}image{else}attachment{/if} is being checked for possible copyright issues. Current predicted waiting time: <strong>Calculating...</strong>.<br /><br /><i class="icon icon16 fa-info-circle"></i> <a href="{page}de.softcreatr.wsc.Article13{/page}">More informations</a>.]]></item>
+		<item name="wcf.message.error.scUploadFilter"><![CDATA[This {if $type === 'image'}image{else}attachment{/if} is being checked for possible copyright issues. Current predicted waiting time: <strong>Calculating...</strong>.<br /><br /><i class="icon icon16 fa-info-circle"></i> <a href="https://savetheinternet.info/about?lang=en">More informations</a>.]]></item>
 	</category>
 </language>
