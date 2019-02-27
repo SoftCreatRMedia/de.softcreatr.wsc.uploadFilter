@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="https://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/vortex/package.xsd" name="de.softcreatr.wsc.uploadFilter">
+	<packageinformation>
+		<packagename><![CDATA[Upload Filter]]></packagename>
+		<packagename language="de"><![CDATA[Upload-Filter]]></packagename>
+		<packagedescription><![CDATA[]]></packagedescription>
+		<packagedescription language="de"><![CDATA[]]></packagedescription>
+		<packageurl><![CDATA[https://www.softcreatr.com]]></packageurl>
+		<version>1.0.0 Beta 1</version>
+		<date>2018-02-27</date>
+		<license><![CDATA[GNU General Public License <https://www.gnu.org/licenses/gpl-3.0.txt>]]></license>
+	</packageinformation>
+	
+	<authorinformation>
+		<author><![CDATA[SoftCreatR Media]]></author>
+		<authorurl><![CDATA[https://www.softcreatr.de]]></authorurl>
+	</authorinformation>
+	
+	<compatibility>
+		<api version="2017" />
+		<api version="2018" />
+	</compatibility>
+	
+	<requiredpackages>
+		<requiredpackage minversion="3.0.0 Alpha 1">com.woltlab.wcf</requiredpackage>
+	</requiredpackages>
+	
+	<instructions type="install">
+		<!-- files -->
+		<instruction type="file" />
+		
+		<!-- config -->
+		<instruction type="eventListener" />
+		<instruction type="templateListener" />
+		<instruction type="page" />
+		<instruction type="language" />
+	</instructions>
+</package>

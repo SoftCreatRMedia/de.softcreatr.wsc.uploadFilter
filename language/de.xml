@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/vortex/language.xsd" languagename="Deutsch" languagecode="de" countrycode="de">
+	<category name="wcf.message">
+		<item name="wcf.message.error.scUploadFilter"><![CDATA[Diese{if $type === 'image'}s Bild{else}r Dateianhang{/if} wird aktuell auf mögliche Urheberrechtsverstöße geprüft. Voraussichtlicher Abschluss der Prüfung: <strong>Wird berechnet...</strong>.<br /><br /><i class="icon icon16 fa-info-circle"></i> <a href="{page}de.softcreatr.wsc.Article13{/page}">Weitere Informationen</a>.]]></item>
+	</category>
+</language>

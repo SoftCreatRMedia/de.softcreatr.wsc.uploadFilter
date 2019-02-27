@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/tornado/page.xsd">
+	<import>
+		<page identifier="de.softcreatr.wsc.Article13">
+			<pageType>text</pageType>
+			<name language="de">Artikel 13</name>
+			<name language="en">Article 13</name>
+			<availableDuringOfflineMode>1</availableDuringOfflineMode>
+			<allowSpidersToIndex>1</allowSpidersToIndex>
+			
+			<content language="en">
+				<title>Article 13</title>
+				<content><![CDATA[WIP]]></content>
+				<customURL>article-13</customURL>
+			</content>
+			<content language="de">
+				<title>Artikel 13</title>
+				<content><![CDATA[WIP]]></content>
+				<customURL>artikel-13</customURL>
+			</content>
+		</page>
+	</import>
+</data>

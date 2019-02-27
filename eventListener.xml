@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="https://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/vortex/eventListener.xsd">
+	<import>
+		<eventlistener name="ScImageUploadFilter">
+			<environment>user</environment>
+			<eventclassname>wcf\system\html\output\node\HtmlOutputNodeProcessor</eventclassname>
+			<eventname>beforeProcess</eventname>
+			<listenerclassname>wcf\system\event\listener\ScUploadFilterHtmlOutputListener</listenerclassname>
+		</eventlistener>
+		
+		<eventlistener name="ScAttachmentListUploadFilter">
+			<environment>user</environment>
+			<eventclassname>wcf\page\AbstractPage</eventclassname>
+			<eventname>show</eventname>
+			<inherit>1</inherit>
+			<listenerclassname>wcf\system\event\listener\ScUploadFilterAttachmentListListener</listenerclassname>
+		</eventlistener>
+		
+		<eventlistener name="ScAvatarRemovalUploadFilter">
+			<environment>user</environment>
+			<eventclassname>wcf\page\AbstractPage</eventclassname>
+			<eventname>show</eventname>
+			<inherit>1</inherit>
+			<listenerclassname>wcf\system\event\listener\ScUploadFilterAvatarRemovalListener</listenerclassname>
+		</eventlistener>
+	</import>
+</data>
