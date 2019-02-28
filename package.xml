@@ -6,8 +6,8 @@
 		<packagedescription><![CDATA[]]></packagedescription>
 		<packagedescription language="de"><![CDATA[]]></packagedescription>
 		<packageurl><![CDATA[https://www.softcreatr.com]]></packageurl>
-		<version>1.0.0 Beta 1</version>
-		<date>2018-02-27</date>
+		<version>1.0.0 Beta 2</version>
+		<date>2018-02-28</date>
 		<license><![CDATA[GNU General Public License <https://www.gnu.org/licenses/gpl-3.0.txt>]]></license>
 	</packageinformation>
 	
@@ -33,6 +33,12 @@
 		<instruction type="eventListener" />
 		<instruction type="templateListener" />
 		<instruction type="page" />
+		<instruction type="language" />
+	</instructions>
+	
+	<instructions type="update" fromversion="1.0.0 Beta 1">
+		<!-- config -->
+		<instruction type="templateListener" />
 		<instruction type="language" />
 	</instructions>
 </package>
