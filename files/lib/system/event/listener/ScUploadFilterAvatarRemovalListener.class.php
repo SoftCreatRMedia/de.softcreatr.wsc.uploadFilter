@@ -4,7 +4,8 @@ use wcf\system\WCF;
 use DateTime;
 
 /**
- * Does something.
+ * Provides an indicator wether to remove/replace
+ * user avatars, or not.
  * 
  * @copyright	SoftCreatR Media
  * @license	GNU General Public License
@@ -15,16 +16,18 @@ class ScUploadFilterAvatarRemovalListener implements IParameterizedEventListener
 	 * @inheritDoc
 	 */
 	public function execute($eventObj, $className, $eventName, array &$parameters) {
-		$tz = WCF::getUser()->getTimeZone();
-		$now = new DateTime('@' . TIME_NOW);
-		$then = DateTime::createFromFormat('!Y-m-d', '2019-03-04');
+		if (!SC_UPLOAD_FREE_SUNDAY_HIDE_AVATARS) return;
 		
-		$now->setTimezone($tz);
-		$then->setTimezone($tz);
+		$tz = WCF::getUser()->getTimeZone();
+		$now = new DateTime('now', $tz);
+		$start = DateTime::createFromFormat('!Y-m-d', SC_UPLOAD_FREE_SUNDAY_START_DATE, $tz);
+		$end = DateTime::createFromFormat('!Y-m-d', SC_UPLOAD_FREE_SUNDAY_END_DATE, $tz);
 		
 		WCF::getTPL()->assign('uploadFilterRemoveAvatar', false);
 		
-		if ($now->getTimestamp() > $then->getTimestamp()) return;
+		if ($now->getTimestamp() < $start->getTimestamp() || $now->getTimestamp() > $end->getTimestamp()) {
+			return;
+		}
 		
 		WCF::getTPL()->assign('uploadFilterRemoveAvatar', true);
 	}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="https://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/vortex/option.xsd">
+	<import>
+		<categories>
+			<category name="sc_upload_free_sunday"></category>
+			
+			<category name="sc_upload_free_sunday.general">
+				<parent>sc_upload_free_sunday</parent>
+			</category>
+			
+			<category name="sc_upload_free_sunday.behavior">
+				<parent>sc_upload_free_sunday</parent>
+			</category>
+		</categories>
+		
+		<options>
+			<option name="sc_upload_free_sunday_start_date">
+				<categoryname>sc_upload_free_sunday.general</categoryname>
+				<optiontype>date</optiontype>
+				<defaultvalue>2019-03-03</defaultvalue>
+			</option>
+			
+			<option name="sc_upload_free_sunday_end_date">
+				<categoryname>sc_upload_free_sunday.general</categoryname>
+				<optiontype>date</optiontype>
+				<defaultvalue>2019-03-04</defaultvalue>
+			</option>
+			
+			<option name="sc_upload_free_sunday_hide_avatars">
+				<categoryname>sc_upload_free_sunday.behavior</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			
+			<option name="sc_upload_free_sunday_hide_images">
+				<categoryname>sc_upload_free_sunday.behavior</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			
+			<option name="sc_upload_free_sunday_hide_quotes">
+				<categoryname>sc_upload_free_sunday.behavior</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			
+			<option name="sc_upload_free_sunday_hide_attachments">
+				<categoryname>sc_upload_free_sunday.behavior</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			
+			<option name="sc_upload_free_sunday_hide_media">
+				<categoryname>sc_upload_free_sunday.behavior</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+		</options>
+	</import>
+</data>

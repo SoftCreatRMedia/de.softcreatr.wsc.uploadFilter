@@ -3,11 +3,11 @@
 	<packageinformation>
 		<packagename><![CDATA[Upload Filter]]></packagename>
 		<packagename language="de"><![CDATA[Upload-Filter]]></packagename>
-		<packagedescription><![CDATA[]]></packagedescription>
-		<packagedescription language="de"><![CDATA[]]></packagedescription>
-		<packageurl><![CDATA[https://www.softcreatr.com]]></packageurl>
-		<version>1.0.0 Beta 2</version>
-		<date>2018-02-28</date>
+		<packagedescription><![CDATA[Provides functionalities for the "upload free sunday" on 03rd March 2019.]]></packagedescription>
+		<packagedescription language="de"><![CDATA[Stellt Funktionalitäten für den "Uploadfreien Sonntag" am 03. März 2019 zur Verfügung.]]></packagedescription>
+		<packageurl><![CDATA[https://support.softcreatr.com/thread/2985-artikel-13-uploadfreier-sonntag-wsc-plugin/]]></packageurl>
+		<version>1.0.0</version>
+		<date>2019-03-01</date>
 		<license><![CDATA[GNU General Public License <https://www.gnu.org/licenses/gpl-3.0.txt>]]></license>
 	</packageinformation>
 	
@@ -19,6 +19,7 @@
 	<compatibility>
 		<api version="2017" />
 		<api version="2018" />
+		<api version="2019" />
 	</compatibility>
 	
 	<requiredpackages>
@@ -30,14 +31,24 @@
 		<instruction type="file" />
 		
 		<!-- config -->
+		<instruction type="option" />
 		<instruction type="eventListener" />
 		<instruction type="templateListener" />
-		<instruction type="page" />
 		<instruction type="language" />
 	</instructions>
 	
 	<instructions type="update" fromversion="1.0.0 Beta 1">
 		<!-- config -->
+		<instruction type="templateListener" />
+		<instruction type="language" />
+	</instructions>
+	
+	<instructions type="update" fromversion="1.0.0 Beta 2">
+		<!-- files -->
+		<instruction type="file" />
+		
+		<!-- config -->
+		<instruction type="option" />
 		<instruction type="templateListener" />
 		<instruction type="language" />
 	</instructions>

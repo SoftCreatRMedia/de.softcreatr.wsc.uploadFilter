@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language xmlns="https://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/vortex/language.xsd" languagecode="en" languagename="English" countrycode="gb">
 	<category name="wcf.message">
-		<item name="wcf.message.error.scUploadFilter"><![CDATA[This {if $type === 'image'}image{else}attachment{/if} is being checked for possible copyright issues. Current predicted waiting time: <strong>Calculating...</strong>.<br /><br /><i class="icon icon16 fa-info-circle"></i> <a href="https://pledge2019.eu/en">More informations</a>.]]></item>
+		<item name="wcf.message.error.scUploadFilter"><![CDATA[This {if $type === 'image'}image{elseif $type === 'quote'}quote{elseif $type === 'media'}media{else}attachment{/if} is being checked for possible copyright issues. Current predicted waiting time: <strong>Calculating...</strong>.<br /><br /><i class="icon icon16 fa-info-circle"></i> <a href="https://pledge2019.eu/en">More informations</a>]]></item>
+	</category>
+	
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.sc_upload_free_sunday"><![CDATA[Upload Free Sunday]]></item>
+		<item name="wcf.acp.option.category.sc_upload_free_sunday.general"><![CDATA[General]]></item>
+		<item name="wcf.acp.option.category.sc_upload_free_sunday.behavior"><![CDATA[Behavior]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_start_date"><![CDATA[Start Date]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_start_date.description"><![CDATA[Starting at 12 AM on the selected day.]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_end_date"><![CDATA[End Date]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_end_date.description"><![CDATA[Up until 11:59 PM of the selected day.]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_hide_avatars"><![CDATA[Hide Avatars]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_hide_avatars.description"><![CDATA[When enabled, uploaded avatars will be hidden and replaced by a generic avatar within the given time of the event.]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_hide_images"><![CDATA[Hide Images]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_hide_images.description"><![CDATA[When enabled, embedded images using the IMG BBCode will be hidden and replaced with a notice within the given time of the event.]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_hide_quotes"><![CDATA[Hide Quotes]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_hide_quotes.description"><![CDATA[When enabled, quotes without any and/or with external sources will be hidden and replaced with a notice within the given time of the event.]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_hide_attachments"><![CDATA[Hide Attachments]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_hide_attachments.description"><![CDATA[When enabled, embedded attachments will be hidden and replaced with a notice within the given time of the event. Non-embedded attachments will be hidden without further notice.]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_hide_media"><![CDATA[Hide Media]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_hide_media.description"><![CDATA[When enabled, embedded media using the MEDIA BBCode will be hidden and replaced with a notice within the given time of the event.]]></item>
 	</category>
 </language>
