@@ -11,7 +11,7 @@
 		<item name="wcf.acp.option.sc_upload_free_sunday_start_date"><![CDATA[Start-Datum]]></item>
 		<item name="wcf.acp.option.sc_upload_free_sunday_start_date.description"><![CDATA[Ab 00:00 Uhr des gewählten Datums.]]></item>
 		<item name="wcf.acp.option.sc_upload_free_sunday_end_date"><![CDATA[End-Datum]]></item>
-		<item name="wcf.acp.option.sc_upload_free_sunday_end_date.description"><![CDATA[Bis einschließlich 23:59 Uhr des gewählten Datums.]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_end_date.description"><![CDATA[Bis 00:00 Uhr des gewählten Datums.]]></item>
 		<item name="wcf.acp.option.sc_upload_free_sunday_hide_avatars"><![CDATA[Avatare ausblenden]]></item>
 		<item name="wcf.acp.option.sc_upload_free_sunday_hide_avatars.description"><![CDATA[Wenn aktiviert, werden hochgeladene Avatare während des gewählten Aktionszeitraums ausgeblendet bzw. gegen einen Standard-Avatar ausgetauscht.]]></item>
 		<item name="wcf.acp.option.sc_upload_free_sunday_hide_images"><![CDATA[Bilder ausblenden]]></item>

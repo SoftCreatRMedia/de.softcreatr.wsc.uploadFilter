@@ -18,12 +18,14 @@
 				<categoryname>sc_upload_free_sunday.general</categoryname>
 				<optiontype>date</optiontype>
 				<defaultvalue>2019-03-03</defaultvalue>
+				<validationpattern>^(\d{4})-(\d{2})-(\d{2})$</validationpattern>
 			</option>
 			
 			<option name="sc_upload_free_sunday_end_date">
 				<categoryname>sc_upload_free_sunday.general</categoryname>
 				<optiontype>date</optiontype>
 				<defaultvalue>2019-03-04</defaultvalue>
+				<validationpattern>^(\d{4})-(\d{2})-(\d{2})$</validationpattern>
 			</option>
 			
 			<option name="sc_upload_free_sunday_hide_avatars">
