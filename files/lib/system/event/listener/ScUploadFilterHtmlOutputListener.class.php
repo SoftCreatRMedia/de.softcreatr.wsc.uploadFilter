@@ -2,6 +2,7 @@
 namespace wcf\system\event\listener;
 use wcf\system\application\ApplicationHandler;
 use wcf\system\WCF;
+use wcf\util\DOMUtil;
 use DateTime;
 
 /**
@@ -87,12 +88,14 @@ class ScUploadFilterHtmlOutputListener implements IParameterizedEventListener {
 		}
 		
 		foreach ($nodeList as $node) {
-			$scImage = $eventObj->renameTag($node['element'], 'p');
-			$scImage->setAttribute('class', 'error scBlockedImage');
-			
-			$fragment = $node['element']->ownerDocument->createDocumentFragment();
-			$fragment->appendXML(WCF::getLanguage()->getDynamicVariable('wcf.message.error.scUploadFilter', ['type' => $node['type']]));
-			$scImage->appendChild($fragment);
+			if (!DOMUtil::isRemoved($node['element'])) {
+				$scImage = $eventObj->renameTag($node['element'], 'p');
+				$scImage->setAttribute('class', 'error scBlockedImage');
+				
+				$fragment = $node['element']->ownerDocument->createDocumentFragment();
+				$fragment->appendXML(WCF::getLanguage()->getDynamicVariable('wcf.message.error.scUploadFilter', ['type' => $node['type']]));
+				$scImage->appendChild($fragment);
+			}
 		}
 	}
 }
