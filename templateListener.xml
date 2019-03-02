@@ -12,7 +12,7 @@
 			<environment>user</environment>
 			<templatename>headInclude</templatename>
 			<eventname>stylesheets</eventname>
-			<templatecode><![CDATA[{if SC_UPLOAD_FREE_SUNDAY_HIDE_PROFILE_BANNERS && $uploadFilterActive|isset && $uploadFilterActive === true}<style>div.userProfileCoverPhoto{ display: none }</style>{/if}]]></templatecode>
+			<templatecode><![CDATA[{if MODULE_USER_COVER_PHOTO && SC_UPLOAD_FREE_SUNDAY_HIDE_PROFILE_BANNERS && $uploadFilterActive|isset && $uploadFilterActive === true}<style>div.userProfileCoverPhoto{ display: none }</style>{/if}]]></templatecode>
 		</templatelistener>
 		
 		<templatelistener name="uploadFilterAvatarReplaceJS">
@@ -26,7 +26,7 @@
 			<environment>user</environment>
 			<templatename>user</templatename>
 			<eventname>javascriptInclude</eventname>
-			<templatecode><![CDATA[{if SC_UPLOAD_FREE_SUNDAY_HIDE_PROFILE_BANNERS && $uploadFilterActive|isset && $uploadFilterActive === true}<script data-relocate="true">WCF.DOMNodeInsertedHandler.addCallback('WCF.UploadFilterCoverPhotoRemove', function() { elBySel('header.userProfileUserWithCoverPhoto').classList.remove('userProfileUserWithCoverPhoto') }); WCF.DOMNodeInsertedHandler.execute();{/if}</script>{/if}]]></templatecode>
+			<templatecode><![CDATA[{if MODULE_USER_COVER_PHOTO && SC_UPLOAD_FREE_SUNDAY_HIDE_PROFILE_BANNERS && $uploadFilterActive|isset && $uploadFilterActive === true}<script data-relocate="true">WCF.DOMNodeInsertedHandler.addCallback('WCF.UploadFilterCoverPhotoRemove', function() { elBySel('header.userProfileUserWithCoverPhoto').classList.remove('userProfileUserWithCoverPhoto') }); WCF.DOMNodeInsertedHandler.execute();{/if}</script>{/if}]]></templatecode>
 		</templatelistener>
 	</import>
 </data>
