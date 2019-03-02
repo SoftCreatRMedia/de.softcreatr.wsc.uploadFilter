@@ -16,12 +16,16 @@
 			<listenerclassname>wcf\system\event\listener\ScUploadFilterAttachmentListListener</listenerclassname>
 		</eventlistener>
 		
-		<eventlistener name="ScAvatarRemovalUploadFilter">
+		<eventlistener name="ScUploadFilterAbstractPage">
 			<environment>user</environment>
 			<eventclassname>wcf\page\AbstractPage</eventclassname>
 			<eventname>show</eventname>
 			<inherit>1</inherit>
-			<listenerclassname>wcf\system\event\listener\ScUploadFilterAvatarRemovalListener</listenerclassname>
+			<listenerclassname>wcf\system\event\listener\ScUploadFilterAbstractPageListener</listenerclassname>
 		</eventlistener>
 	</import>
+	
+	<delete>
+		<eventlistener name="ScAvatarRemovalUploadFilter" />
+	</delete>
 </data>

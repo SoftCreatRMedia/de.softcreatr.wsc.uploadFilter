@@ -22,5 +22,7 @@
 		<item name="wcf.acp.option.sc_upload_free_sunday_hide_attachments.description"><![CDATA[Wenn aktiviert, werden eingebundene Dateianhänge während des gewählten Aktionszeitraums ausgeblendet bzw. gegen einen Hinweistext ausgetauscht.<br />Nicht eingebundene Anhänge werden ohne Hinweis ausgeblendet.]]></item>
 		<item name="wcf.acp.option.sc_upload_free_sunday_hide_media"><![CDATA[Medien ausblenden]]></item>
 		<item name="wcf.acp.option.sc_upload_free_sunday_hide_media.description"><![CDATA[Wenn aktiviert, werden über den MEDIA-BBCode eingefügte Medien (z.B. YouTube-Videos) während des gewählten Aktionszeitraums ausgeblendet bzw. gegen einen Hinweistext ausgetauscht.]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_hide_profile_banners"><![CDATA[Titelbilder ausblenden]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_hide_profile_banners.description"><![CDATA[Wenn aktiviert, werden hochgeladene Titelbildern von Benutzern in deren Profilen während des gewählten Aktionszeitraums ausgeblendet.]]></item>
 	</category>
 </language>

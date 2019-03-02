@@ -22,5 +22,7 @@
 		<item name="wcf.acp.option.sc_upload_free_sunday_hide_attachments.description"><![CDATA[When enabled, embedded attachments will be hidden and replaced with a notice within the given time of the event. Non-embedded attachments will be hidden without further notice.]]></item>
 		<item name="wcf.acp.option.sc_upload_free_sunday_hide_media"><![CDATA[Hide Media]]></item>
 		<item name="wcf.acp.option.sc_upload_free_sunday_hide_media.description"><![CDATA[When enabled, embedded media using the MEDIA BBCode will be hidden and replaced with a notice within the given time of the event.]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_hide_profile_banners"><![CDATA[Hide Cover Photos]]></item>
+		<item name="wcf.acp.option.sc_upload_free_sunday_hide_profile_banners.description"><![CDATA[When enabled, uploaded cover photos will be hidden within the given time of the event.]]></item>
 	</category>
 </language>

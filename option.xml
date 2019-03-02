@@ -28,13 +28,13 @@
 				<validationpattern>^(\d{4})-(\d{2})-(\d{2})$</validationpattern>
 			</option>
 			
-			<option name="sc_upload_free_sunday_hide_avatars">
+			<option name="sc_upload_free_sunday_hide_images">
 				<categoryname>sc_upload_free_sunday.behavior</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>1</defaultvalue>
 			</option>
 			
-			<option name="sc_upload_free_sunday_hide_images">
+			<option name="sc_upload_free_sunday_hide_media">
 				<categoryname>sc_upload_free_sunday.behavior</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>1</defaultvalue>
@@ -52,7 +52,13 @@
 				<defaultvalue>1</defaultvalue>
 			</option>
 			
-			<option name="sc_upload_free_sunday_hide_media">
+			<option name="sc_upload_free_sunday_hide_avatars">
+				<categoryname>sc_upload_free_sunday.behavior</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			
+			<option name="sc_upload_free_sunday_hide_profile_banners">
 				<categoryname>sc_upload_free_sunday.behavior</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>1</defaultvalue>
