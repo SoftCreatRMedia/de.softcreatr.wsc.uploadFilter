@@ -4,6 +4,11 @@
 		<item name="wcf.message.error.scUploadFilter"><![CDATA[This {if $type === 'image'}image{elseif $type === 'quote'}quote{elseif $type === 'media'}media{else}attachment{/if} is being checked for possible copyright issues. Current predicted waiting time: <strong>Calculating...</strong>.<br /><br /><i class="icon icon16 fa-info-circle"></i> <a href="https://pledge2019.eu/en">More informations</a>]]></item>
 	</category>
 	
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.user.uploadFilter"><![CDATA[Upload Free Sunday]]></item>
+		<item name="wcf.acp.group.option.user.uploadFilter.canIgnoreUploadFilter"><![CDATA[Can avoid the "Upload Free Sunday" restrictions]]></item>
+	</category>
+	
 	<category name="wcf.acp.option">
 		<item name="wcf.acp.option.category.sc_upload_free_sunday"><![CDATA[Upload Free Sunday]]></item>
 		<item name="wcf.acp.option.category.sc_upload_free_sunday.general"><![CDATA[General]]></item>

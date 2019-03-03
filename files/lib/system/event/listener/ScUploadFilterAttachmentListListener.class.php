@@ -15,6 +15,7 @@ class ScUploadFilterAttachmentListListener implements IParameterizedEventListene
 	 * @inheritDoc
 	 */
 	public function execute($eventObj, $className, $eventName, array &$parameters) {
+		if (WCF::getSession()->getPermission('user.uploadFilter.canIgnoreUploadFilter')) return;
 		if (!SC_UPLOAD_FREE_SUNDAY_HIDE_ATTACHMENTS) return;
 		
 		$tz = WCF::getUser()->getTimeZone();

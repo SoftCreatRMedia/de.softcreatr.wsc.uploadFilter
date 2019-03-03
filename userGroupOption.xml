@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="https://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/vortex/userGroupOption.xsd">
+	<import>
+		<categories>
+			<category name="user.uploadFilter">
+				<parent>user</parent>
+			</category>
+		</categories>
+		
+		<options>
+			<option name="user.uploadFilter.canIgnoreUploadFilter">
+				<categoryname>user.uploadFilter</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+		</options>
+	</import>
+</data>

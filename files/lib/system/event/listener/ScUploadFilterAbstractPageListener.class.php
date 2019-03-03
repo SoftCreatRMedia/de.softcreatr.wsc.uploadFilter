@@ -15,7 +15,9 @@ class ScUploadFilterAbstractPageListener implements IParameterizedEventListener 
 	/**
 	 * @inheritDoc
 	 */
-	public function execute($eventObj, $className, $eventName, array &$parameters) {		
+	public function execute($eventObj, $className, $eventName, array &$parameters) {
+		if (WCF::getSession()->getPermission('user.uploadFilter.canIgnoreUploadFilter')) return;
+		
 		$tz = WCF::getUser()->getTimeZone();
 		$now = new DateTime('now', $tz);
 		$start = DateTime::createFromFormat('!Y-m-d', SC_UPLOAD_FREE_SUNDAY_START_DATE, $tz);
